@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Neon Noir Poetry Site - Dark Base */
+    --background: 220 50% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 45% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 45% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Soft neon cyan accent */
+    --primary: 180 50% 55%;
+    --primary-foreground: 220 50% 6%;
+
+    /* Deep card variant */
+    --secondary: 220 40% 14%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted backgrounds */
+    --muted: 220 40% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Soft magenta accent */
+    --accent: 320 45% 60%;
+    --accent-foreground: 220 50% 6%;
+
+    /* Soft lime accent - for highlights */
+    --neon-lime: 80 45% 55%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Subtle borders with neon hint */
+    --border: 220 30% 20%;
+    --input: 220 35% 15%;
+    --ring: 180 50% 55%;
+
+    --radius: 0.5rem;
+
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Neon glow utilities - SOFT & SUBTLE */
+  .neon-glow-soft {
+    text-shadow: 
+      0 0 10px hsl(var(--primary) / 0.15),
+      0 0 20px hsl(var(--primary) / 0.1);
+  }
+
+  .neon-glow-accent {
+    text-shadow: 
+      0 0 10px hsl(var(--accent) / 0.15),
+      0 0 20px hsl(var(--accent) / 0.1);
+  }
+
+  .neon-border-soft {
+    border: 1px solid hsl(var(--primary) / 0.3);
+    box-shadow: 
+      0 0 5px hsl(var(--primary) / 0.1),
+      inset 0 0 5px hsl(var(--primary) / 0.05);
+  }
+
+  .neon-border-accent {
+    border: 1px solid hsl(var(--accent) / 0.3);
+    box-shadow: 
+      0 0 5px hsl(var(--accent) / 0.1),
+      inset 0 0 5px hsl(var(--accent) / 0.05);
+  }
+}
