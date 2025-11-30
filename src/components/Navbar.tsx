@@ -14,7 +14,7 @@ const Navbar = () => {
             to="/" 
             className="font-display text-2xl font-bold tracking-wider neon-glow-soft hover:neon-glow-accent transition-all duration-500"
           >
-            NEON VERSES
+            Wolfe MCR
           </Link>
           
           <div className="flex items-center gap-8">
