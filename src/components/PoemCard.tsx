@@ -22,7 +22,7 @@ const PoemCard = ({ id, title, excerpt, date, category }: PoemCardProps) => {
           </span>
         )}
         
-        <h3 className="font-display text-2xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+        <h3 className="font-display text-2xl font-bold mb-3 group-hover:text-accent transition-colors duration-300">
           {title}
         </h3>
         
@@ -36,7 +36,7 @@ const PoemCard = ({ id, title, excerpt, date, category }: PoemCardProps) => {
             <time>{date}</time>
           </div>
           
-          <div className="flex items-center gap-1 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="flex items-center gap-1 text-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <span className="font-body tracking-wider uppercase">Read</span>
             <ArrowRight className="w-4 h-4" />
           </div>

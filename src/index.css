@@ -75,6 +75,12 @@ All colors MUST be HSL.
       0 0 20px hsl(196 67% 45% / 0.1);
   }
 
+  .neon-glow-green {
+    text-shadow: 
+      0 0 10px hsl(var(--neon-lime) / 0.15),
+      0 0 20px hsl(var(--neon-lime) / 0.1);
+  }
+
   .neon-border-soft {
     border: 1px solid hsl(var(--primary) / 0.3);
     box-shadow: 

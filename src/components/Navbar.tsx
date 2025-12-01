@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link 
             to="/" 
-            className="font-display text-2xl font-bold tracking-wider neon-glow-soft hover:neon-glow-accent transition-all duration-500"
+            className="font-display text-2xl font-bold tracking-wider text-accent neon-glow-green hover:neon-glow-green transition-all duration-500"
           >
             Wolfe MCR
           </Link>
@@ -20,8 +20,8 @@ const Navbar = () => {
           <div className="flex items-center gap-8">
             <Link
               to="/"
-              className={`flex items-center gap-2 font-body text-sm tracking-wide transition-all duration-300 hover:text-primary ${
-                isActive("/") ? "text-primary neon-glow-soft" : "text-foreground"
+              className={`flex items-center gap-2 font-body text-sm tracking-wide transition-all duration-300 hover:text-neon-lime ${
+                isActive("/") ? "text-neon-lime neon-glow-green" : "text-foreground"
               }`}
             >
               <BookOpen className="w-4 h-4" />
