@@ -17,7 +17,7 @@ const PoemCard = ({ id, title, excerpt, date, category }: PoemCardProps) => {
     >
       <article className="bg-card neon-border-soft rounded-lg p-6 h-full transition-all duration-500 hover:bg-card/80 hover:neon-border-accent hover:translate-y-[-4px]">
         {category && (
-          <span className="inline-block px-3 py-1 text-xs font-body tracking-widest uppercase bg-primary/10 text-primary rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-xs font-body tracking-widest uppercase bg-neon-lime/10 text-neon-lime rounded-full mb-4">
             {category}
           </span>
         )}

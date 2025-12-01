@@ -77,8 +77,16 @@ All colors MUST be HSL.
 
   .neon-glow-green {
     text-shadow: 
-      0 0 10px hsl(var(--neon-lime) / 0.15),
-      0 0 20px hsl(var(--neon-lime) / 0.1);
+      0 0 15px hsl(var(--neon-lime) / 0.4),
+      0 0 30px hsl(var(--neon-lime) / 0.3),
+      0 0 45px hsl(var(--neon-lime) / 0.2);
+  }
+
+  .neon-border-green {
+    border: 1px solid hsl(var(--neon-lime) / 0.3);
+    box-shadow: 
+      0 0 5px hsl(var(--neon-lime) / 0.1),
+      inset 0 0 5px hsl(var(--neon-lime) / 0.05);
   }
 
   .neon-border-soft {
