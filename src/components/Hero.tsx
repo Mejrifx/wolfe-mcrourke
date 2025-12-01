@@ -23,7 +23,7 @@ const Hero = () => {
           <img 
             src="/Wolfe MCR Logo.png" 
             alt="Wolfe MCR Logo" 
-            className="max-w-[400px] md:max-w-[600px] w-full h-auto object-contain"
+            className="max-w-[500px] md:max-w-[800px] lg:max-w-[900px] w-full h-auto object-contain"
           />
         </div>
         <p className="font-body text-xl md:text-2xl text-muted-foreground mb-5 max-w-2xl mx-auto leading-relaxed">
