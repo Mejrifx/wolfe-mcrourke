@@ -19,14 +19,14 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center animate-fade-in -translate-y-16 md:-translate-y-20">
-        <div className="flex justify-center mb-2">
+        <div className="flex justify-center mb-0.5">
           <img 
             src="/Wolfe MCR Logo.png" 
             alt="Wolfe MCR Logo" 
             className="max-w-[400px] md:max-w-[600px] w-full h-auto object-contain"
           />
         </div>
-        <p className="font-body text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto leading-relaxed">
+        <p className="font-body text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto leading-relaxed">
           Poetry illuminated by the glow of the digital night
         </p>
         
